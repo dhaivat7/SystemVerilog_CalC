@@ -11,7 +11,7 @@ This Example has 3 directories :
  /sv   : contains the Testbench files
 
 To run the Example, go to the /sim directory and 
-enter the follwoing Run Command from the terminal : 
+enter the following Run Command from the terminal : 
 		
   make runc (Batch mode)
   make run  (GUI mode)
@@ -29,6 +29,11 @@ To run Regression, go to the /sim directory and
 enter the following Run Command from the terminal :
 
   ./RunSim -f runlist
+
+To generate Functional Coverage text file, enter 
+the following Run Commans from the terminal : 
+  
+  make cover
 
 ======================================================
 ======================================================
