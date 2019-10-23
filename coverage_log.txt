@@ -1,0 +1,142 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /calci_pkg/calci_sig_cov/calci_sig_cov_sig_cg 
+                                                        66.6%        100    Uncovered            
+    covered/total bins:                                     4          6                      
+    missing/total bins:                                     2          6                      
+    % Hit:                                              66.6%        100                      
+    Coverpoint calci_sig_cov_sig_cg::cp_VALID_cp       100.0%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                         100.0%        100                      
+        bin low                                             1          1    Covered              
+        bin high                                            1          1    Covered              
+    Coverpoint calci_sig_cov_sig_cg::cp_STALL_cp        50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+        bin low                                             2          1    Covered              
+        bin high                                            0          1    ZERO                 
+    Cross calci_sig_cov_sig_cg::cr_VLD_STL_cr           50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+        bin <high,low>                                      1          1    Covered              
+        ignore_bin cr_VLD_STL_BIN_0                         1               Occurred             
+        bin <high,high>                                     0          1    ZERO                 
+ CLASS calci_sig_cov
+ Covergroup instance calci_sig_cov_cg_INPUT MONITOR 
+                                                        50.0%        100    Uncovered            
+    covered/total bins:                                     3          6                      
+    missing/total bins:                                     3          6                      
+    % Hit:                                              50.0%        100                      
+    Coverpoint cp_VALID_cp                              50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+        bin low                                             0          1    ZERO                 
+        bin high                                            1          1    Covered              
+    Coverpoint cp_STALL_cp                              50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+        bin low                                             1          1    Covered              
+        bin high                                            0          1    ZERO                 
+    Cross cr_VLD_STL_cr                                 50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+        bin <high,low>                                      1          1    Covered              
+        ignore_bin cr_VLD_STL_BIN_0                         0               ZERO                 
+        bin <high,high>                                     0          1    ZERO                 
+ Covergroup instance calci_sig_cov_cg_OUTPUT MONITOR 
+                                                        33.3%        100    Uncovered            
+    covered/total bins:                                     2          6                      
+    missing/total bins:                                     4          6                      
+    % Hit:                                              33.3%        100                      
+    Coverpoint cp_VALID_cp                              50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+        bin low                                             1          1    Covered              
+        bin high                                            0          1    ZERO                 
+    Coverpoint cp_STALL_cp                              50.0%        100    Uncovered            
+        covered/total bins:                                 1          2                      
+        missing/total bins:                                 1          2                      
+        % Hit:                                          50.0%        100                      
+        bin low                                             1          1    Covered              
+        bin high                                            0          1    ZERO                 
+    Cross cr_VLD_STL_cr                                  0.0%        100    ZERO                 
+        covered/total bins:                                 0          2                      
+        missing/total bins:                                 2          2                      
+        % Hit:                                           0.0%        100                      
+        ignore_bin cr_VLD_STL_BIN_0                         1               Occurred             
+        bin <high,low>                                      0          1    ZERO                 
+        bin <high,high>                                     0          1    ZERO                 
+ TYPE /calci_pkg/calci_trans_cov/calci_trans_cov_tlm_cg 
+                                                        21.6%        100    Uncovered            
+    covered/total bins:                                     3         14                      
+    missing/total bins:                                    11         14                      
+    % Hit:                                              21.4%        100                      
+    Coverpoint calci_trans_cov_tlm_cg::cp_CTRL_cp       25.0%        100    Uncovered            
+        covered/total bins:                                 1          4                      
+        missing/total bins:                                 3          4                      
+        % Hit:                                          25.0%        100                      
+        bin cp_CTRL_BIN_0[0]                                1          1    Covered              
+        bin cp_CTRL_BIN_0[1]                                0          1    ZERO                 
+        bin cp_CTRL_BIN_0[2]                                0          1    ZERO                 
+        bin cp_CTRL_BIN_0[3]                                0          1    ZERO                 
+    Coverpoint calci_trans_cov_tlm_cg::cp_A_cp          20.0%        100    Uncovered            
+        covered/total bins:                                 1          5                      
+        missing/total bins:                                 4          5                      
+        % Hit:                                          20.0%        100                      
+        bin zero                                            0          1    ZERO                 
+        bin low                                             1          1    Covered              
+        bin mid                                             0          1    ZERO                 
+        bin high                                            0          1    ZERO                 
+        bin max                                             0          1    ZERO                 
+    Coverpoint calci_trans_cov_tlm_cg::cp_B_cp          20.0%        100    Uncovered            
+        covered/total bins:                                 1          5                      
+        missing/total bins:                                 4          5                      
+        % Hit:                                          20.0%        100                      
+        bin zero                                            0          1    ZERO                 
+        bin low                                             1          1    Covered              
+        bin mid                                             0          1    ZERO                 
+        bin high                                            0          1    ZERO                 
+        bin max                                             0          1    ZERO                 
+ CLASS calci_trans_cov
+ Covergroup instance calci_trans_cov_tlm_cg0            21.6%        100    Uncovered            
+    covered/total bins:                                     3         14                      
+    missing/total bins:                                    11         14                      
+    % Hit:                                              21.4%        100                      
+    Coverpoint cp_CTRL_cp                               25.0%        100    Uncovered            
+        covered/total bins:                                 1          4                      
+        missing/total bins:                                 3          4                      
+        % Hit:                                          25.0%        100                      
+        bin cp_CTRL_BIN_0[0]                                1          1    Covered              
+        bin cp_CTRL_BIN_0[1]                                0          1    ZERO                 
+        bin cp_CTRL_BIN_0[2]                                0          1    ZERO                 
+        bin cp_CTRL_BIN_0[3]                                0          1    ZERO                 
+    Coverpoint cp_A_cp                                  20.0%        100    Uncovered            
+        covered/total bins:                                 1          5                      
+        missing/total bins:                                 4          5                      
+        % Hit:                                          20.0%        100                      
+        bin zero                                            0          1    ZERO                 
+        bin low                                             1          1    Covered              
+        bin mid                                             0          1    ZERO                 
+        bin high                                            0          1    ZERO                 
+        bin max                                             0          1    ZERO                 
+    Coverpoint cp_B_cp                                  20.0%        100    Uncovered            
+        covered/total bins:                                 1          5                      
+        missing/total bins:                                 4          5                      
+        % Hit:                                          20.0%        100                      
+        bin zero                                            0          1    ZERO                 
+        bin low                                             1          1    Covered              
+        bin mid                                             0          1    ZERO                 
+        bin high                                            0          1    ZERO                 
+        bin max                                             0          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 44.1%  COVERGROUP TYPES: 2
